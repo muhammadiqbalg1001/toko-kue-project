@@ -1,0 +1,28 @@
+# Environment & Secrets
+.env
+.env.*.local
+!.env.example
+
+# Dependencies
+node_modules/
+api/vendor/
+
+# Build Outputs (Vue)
+frontend/dist/
+frontend/dist-ssr/
+
+# User Uploads (PHP)
+api/uploads/*
+!api/uploads/.gitkeep
+
+# WhatsApp Sessions (Node.js)
+wa-service/auth_info_baileys/
+
+# Logs
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
