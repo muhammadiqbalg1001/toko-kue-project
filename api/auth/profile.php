@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK) {
-        $upload_dir = __DIR__ . '/../uploads/users';
+        $upload_dir = __DIR__ . '/../uploads/users/';
 
         $file_extension = pathinfo($_FILES['photo']['name'], PATHINFO_EXTENSION);
         $new_filename = $username . '_' . $user_id . '_' . time() . '.' . strtolower($file_extension);
